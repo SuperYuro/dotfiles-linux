@@ -22,7 +22,7 @@ git clone --depth=1 https://github.com/zsh-users/zsh-completions $HOME/.oh-my-zs
 git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # Theme
-git clone --depth=1 https://github.com/romkatv/powerlevek10k $HOME/.oh-my-zsh/custom/themes/powerlevek10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k $HOME/.oh-my-zsh/custom/themes/powerlevel10k
 
 # Base Development
 sudo pacman -S curl tmux ripgrep wget unzip the_silver_searcher --noconfirm
@@ -51,4 +51,4 @@ nvm install --lts
 nvm use --lts
 
 # LaTeX
-sudo paman -S texlive-most texlive-langextra texlive-langjapanese --noconfirm
+sudo pacman -S texlive-most texlive-langextra texlive-langjapanese --noconfirm
