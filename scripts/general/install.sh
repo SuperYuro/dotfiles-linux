@@ -51,4 +51,4 @@ nvm install --lts
 nvm use --lts
 
 # LaTeX
-sudo pacman -S texlive-most texlive-langextra texlive-langjapanese --noconfirm
+sudo pacman -S texlive-core texlive-langextra texlive-langjapanese --noconfirm
