@@ -1,4 +1,4 @@
-DOTSCRIPTDIR="~/dotfiles-linux/scripts"
+DOTSCRIPTDIR="${HOME}/dotfiles-linux/scripts"
 
 all:
 	@echo "Config files for linux"
