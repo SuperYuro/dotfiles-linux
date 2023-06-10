@@ -20,6 +20,8 @@
 	pl = pull
 	ps = push
     sh = stash
+	sw = switch
+	ds = diff --staged
 [pull]
 	rebase = false
 [filter "lfs"]
