@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
-DOTCONFIGDIR="~/dotfiles-linux/config"
-XDG_CONFIG_HOME="${HOME}/.config"
+DOTCONFIGDIR=${HOME}/dotfiles-linux/config
+XDG_CONFIG_HOME=${HOME}/.config
 
 link_file() {
     local filename=$1
