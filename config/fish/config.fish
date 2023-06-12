@@ -57,8 +57,6 @@ if [ -f "/mnt/c/Program Files/Mozilla Firefox/firefox.exe" ]
   alias firefox "/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe"
 end
 
-alias cv 'cd ~/Development'
-
 alias rl 'exec fish'
 
 alias ghl 'cd (ghq root)/(ghq list | peco)'
