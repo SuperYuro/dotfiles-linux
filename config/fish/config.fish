@@ -61,4 +61,5 @@ alias cv 'cd ~/Development'
 
 alias rl 'exec fish'
 
-alias gl 'cd (ghq root)/(ghq list | peco)'
+alias ghl 'cd (ghq root)/(ghq list | peco)'
+alias lg lazygit
