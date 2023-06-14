@@ -15,10 +15,10 @@ link_file() {
     ln -s "${targetfile}" "${path}/${filename}"
 }
 
-link_file ".zshrc" "${HOME}"
 link_file ".gitconfig" "${HOME}"
 link_file ".clang-format" "${HOME}"
 
 link_file "tmux" "${XDG_CONFIG_HOME}"
+link_file "fish" "${XDG_CONFIG_HOME}"
 
 git clone https://github.com/SuperYuro/nvim ~/.config/nvim
