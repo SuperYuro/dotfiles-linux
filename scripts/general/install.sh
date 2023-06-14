@@ -17,7 +17,13 @@ sudo pacman -S fish fisher --noconfirm
 git clone --depth=1 https://github.com/romkatv/powerlevel10k $HOME/.oh-my-zsh/custom/themes/powerlevel10k
 
 # Base Development
-sudo pacman -S curl tmux ripgrep wget unzip the_silver_searcher --noconfirm
+yay -S curl ripgrep wget unzip the_silver_searcher --noconfirm
+
+# Git
+yay -S git ghq lazygit
+
+# Tmux
+yay -S tmux tmux-nord-theme
 
 # C/C++
 sudo pacman -S gcc gdb clang llvm --noconfirm
