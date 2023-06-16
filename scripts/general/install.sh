@@ -39,4 +39,4 @@ sudo pacman -S neovim --noconfirm
 sudo pacman -S python python-pip rye --noconfirm
 
 # LaTeX
-sudo pacman -S texlive-core texlive-langextra texlive-langjapanese --noconfirm
+sudo pacman -S texlive texlive-lang --noconfirm
