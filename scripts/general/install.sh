@@ -13,17 +13,14 @@ rm ~/yay -rf
 # Shell
 sudo pacman -S fish fisher --noconfirm
 
-# Theme
-git clone --depth=1 https://github.com/romkatv/powerlevel10k $HOME/.oh-my-zsh/custom/themes/powerlevel10k
-
 # Base Development
 yay -S curl ripgrep wget unzip the_silver_searcher --noconfirm
 
 # Git
-yay -S git ghq lazygit
+yay -S git ghq lazygit --noconfirm
 
 # Tmux
-yay -S tmux tmux-nord-theme
+yay -S tmux tmux-nord-theme --noconfirm
 
 # C/C++
 sudo pacman -S gcc gdb clang llvm --noconfirm
