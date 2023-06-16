@@ -3,10 +3,10 @@
 sudo pacman -S gnome-keyring alacritty xsel --noconfirm
 
 # Japanese IME
-yay -S fcitx5-mozc fcitx5-configtool --noconfirm
+yay -S fcitx5-mozc fcitx5-nord fcitx5-configtool --noconfirm
 
 # Browser
-sudo pacman -S firefox
+sudo pacman -S firefox --noconfirm
 
 # Mail
 sudo pacman -S thunderbird --noconfirm
