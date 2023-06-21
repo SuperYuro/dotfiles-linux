@@ -138,8 +138,12 @@ export ARCHFLAGS="-arch x86_64"
 #
 # Alias
 # alias ls='ls --color=auto'
-if  type "exa" > /dev/null 2>&1 ;then
-    alias ls=exa
+if type "bat" > /dev/null 2>&1; then
+  alias cat=bat
+fi
+
+if  type "lsd" > /dev/null 2>&1 ;then
+    alias ls=lsd
 fi
 alias l='ls -1a'
 alias ll='ls -lh'
@@ -148,6 +152,7 @@ alias la='ls -lha'
 alias c=cd
 alias g=git
 alias v=nvim
+alias vt='nvim -c :terminal'
 
 alias dp='docker compose'
 alias th=touch
@@ -159,7 +164,25 @@ alias cv='cd ~/Development/'
 
 alias rl='exec zsh'
 
+alias psh='poetry shell'
+alias prt='poetry run tmux'
+
 alias copy='xsel --input --clipboard'
+
+if [[ -f "/mnt/c/Users/SuperYuro/Appdata/Local/Programs/Microsoft VS Code/bin/code" ]]; then
+  alias code="/mnt/c/Users/SuperYuro/Appdata/Local/Programs/Microsoft\ VS\ Code/bin/code"
+fi
+
+if [[ -f "/mnt/c/Windows/explorer.exe" ]]; then
+  alias explorer="/mnt/c/Windows/explorer.exe"
+fi
+
+if [[ -f "/mnt/c/Program Files/Mozilla Firefox/firefox.exe" ]]; then
+  alias firefox="/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe"
+fi
+
+alias ghl='cd $(ghq root)/$(ghq list | peco)'
+alias lg=lazygit
 
 # history
 HISTFILE=$HOME/.zsh_history
@@ -185,4 +208,3 @@ bindkey '^R' peco-history-selection
 [[ ! -f ~/dotfiles/config/.p10k.zsh ]] || source ~/dotfiles/config/.p10k.zsh
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
-cd
