@@ -4,6 +4,10 @@ sudo pacman -Syyu --noconfirm
 
 sudo pacman -S base-devel --noconfirm
 
+# Rust
+sudo pacman -S rustup --noconfirm
+rustup default stable
+
 # Install AUR helper
 git clone https://aur.archlinux.org/yay ~/yay
 cd ~/yay
@@ -11,7 +15,16 @@ makepkg -si --noconfirm
 rm ~/yay -rf
 
 # Shell
-sudo pacman -S fish fisher --noconfirm
+sudo pacman -S zsh peco --noconfirm
+
+# Shell plugins
+git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh ~/.oh-my-zsh
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k ~/.oh-my-zsh/custom/themes/powerlevel10k
+
+git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone --depth=1 https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
+git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # Base Development
 yay -S curl ripgrep wget unzip the_silver_searcher --noconfirm
@@ -24,10 +37,6 @@ yay -S tmux tmux-nord-theme --noconfirm
 
 # C/C++
 sudo pacman -S gcc gdb clang llvm --noconfirm
-
-# Rust
-sudo pacman -S rustup --noconfirm
-rustup default stable
 
 # Java
 sudo pacman -S jdk-openjdk gradle --noconfirm
