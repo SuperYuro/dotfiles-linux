@@ -4,7 +4,7 @@
 [core]
 	bare = true
 	autocrlf = input
-	pager = cat
+	pager = more
 [init]
 	defaultBranch = main
 [alias]
