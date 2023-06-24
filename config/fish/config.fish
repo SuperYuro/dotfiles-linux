@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-set -g theme_color_scheme nord
+set -g theme_color_scheme dracula
 
 set -g theme_display_git yes
 set -g theme_display_git_default_branch yes
@@ -17,7 +17,15 @@ set -g theme_display_hostname ssh
 set -g theme_show_exit_status yes
 
 if type "exa" > /dev/null 2>&1
-    alias ls exa
+  alias ls exa
+else if type "lsd" >/dev/null 2>&1
+  alias ls lsd
+end
+
+if type "bat" > /dev/null 2>&1
+  alias cat bat
+else if type "batcat" > /dev/null 2>&1
+  alias cat batcat
 end
 
 alias l 'ls -1a'
@@ -59,5 +67,5 @@ end
 
 alias rl 'exec fish'
 
-alias ghl 'cd (ghq root)/(ghq list | peco)'
+alias ghl 'cd ~/Development/(ls ~/Development | peco)'
 alias lg lazygit
