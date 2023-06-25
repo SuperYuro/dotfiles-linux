@@ -68,4 +68,5 @@ end
 alias rl 'exec fish'
 
 alias ghl 'cd ~/Development/(ls ~/Development | peco)'
+alias cv 'cd ~/Development'
 alias lg lazygit
