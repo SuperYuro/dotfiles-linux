@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-set -g theme_color_scheme dracula
+set -g theme_color_scheme nord
 
 set -g theme_display_git yes
 set -g theme_display_git_default_branch yes
@@ -70,3 +70,5 @@ alias rl 'exec fish'
 alias ghl 'cd ~/Development/(ls ~/Development | peco)'
 alias cv 'cd ~/Development'
 alias lg lazygit
+
+pyenv init - | source
