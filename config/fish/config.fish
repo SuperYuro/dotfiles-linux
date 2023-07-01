@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-set -g theme_color_scheme light
+set -g theme_color_scheme dracula
 
 set -g theme_display_git yes
 set -g theme_display_git_default_branch yes
@@ -61,8 +61,8 @@ if [ -f "/mnt/c/Windows/explorer.exe" ]
   alias explorer "/mnt/c/Windows/explorer.exe"
 end
 
-if [ -f "/mnt/c/Program Files/Mozilla Firefox/firefox.exe" ]
-  alias firefox "/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe"
+if [ -f "/mnt/c/Windows/system32/clip.exe" ]
+  alias clip "/mnt/c/Windows/system32/clip.exe"
 end
 
 alias rl 'exec fish'
