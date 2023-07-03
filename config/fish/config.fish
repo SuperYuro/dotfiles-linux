@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-set -g theme_color_scheme dracula
+set -g theme_color_scheme light
 
 set -g theme_display_git yes
 set -g theme_display_git_default_branch yes
@@ -18,8 +18,6 @@ set -g theme_show_exit_status yes
 
 if type "exa" > /dev/null 2>&1
   alias ls exa
-else if type "lsd" >/dev/null 2>&1
-  alias ls lsd
 end
 
 if type "bat" > /dev/null 2>&1
