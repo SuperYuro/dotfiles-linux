@@ -16,14 +16,16 @@ set -g theme_display_hostname ssh
 
 set -g theme_show_exit_status yes
 
-if type "exa" > /dev/null 2>&1
-  alias ls exa
+if type lsd >/dev/null 2>&1
+    alias ls lsd
+else if type exa >/dev/null 2>&1
+    alias ls exa
 end
 
-if type "bat" > /dev/null 2>&1
-  alias cat bat
-else if type "batcat" > /dev/null 2>&1
-  alias cat batcat
+if type bat >/dev/null 2>&1
+    alias cat bat
+else if type batcat >/dev/null 2>&1
+    alias cat batcat
 end
 
 alias l 'ls -1a'
@@ -47,20 +49,20 @@ if type xsel >/dev/null 2>&1
     alias copy 'xsel --input --clipboard'
 end
 
-if type "nvim" >/dev/null 2>&1
+if type nvim >/dev/null 2>&1
     set -Ux EDITOR nvim
 end
 
 if [ -f "/mnt/c/Users/SuperYuro/Appdata/Local/Programs/Microsoft VS Code/bin/code" ]
-  alias code "/mnt/c/Users/SuperYuro/Appdata/Local/Programs/Microsoft\ VS\ Code/bin/code"
+    alias code "/mnt/c/Users/SuperYuro/Appdata/Local/Programs/Microsoft\ VS\ Code/bin/code"
 end
 
 if [ -f "/mnt/c/Windows/explorer.exe" ]
-  alias explorer "/mnt/c/Windows/explorer.exe"
+    alias explorer "/mnt/c/Windows/explorer.exe"
 end
 
 if [ -f "/mnt/c/Windows/system32/clip.exe" ]
-  alias clip "/mnt/c/Windows/system32/clip.exe"
+    alias clip "/mnt/c/Windows/system32/clip.exe"
 end
 
 alias rl 'exec fish'
