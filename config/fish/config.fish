@@ -18,6 +18,7 @@ set -g theme_show_exit_status yes
 
 if type lsd >/dev/null 2>&1
     alias ls lsd
+    alias lt 'lsd --tree'
 else if type exa >/dev/null 2>&1
     alias ls exa
 end
