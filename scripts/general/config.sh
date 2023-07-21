@@ -15,6 +15,7 @@ link_file() {
     ln -s "${targetfile}" "${path}/${filename}"
 }
 
+link_file ".bashrc" "${HOME}"
 link_file ".gitconfig" "${HOME}"
 link_file ".clang-format" "${HOME}"
 
