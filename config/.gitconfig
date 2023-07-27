@@ -20,9 +20,10 @@
 	st = status
 	pl = pull
 	ps = push
-    sh = stash
+	sh = stash
 	sw = switch
 	ds = diff --staged
+	sm = submodule
 [pull]
 	rebase = false
 [filter "lfs"]
