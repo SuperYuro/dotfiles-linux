@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-set -g theme_color_scheme dark
+set -g theme_color_scheme dracula
 
 set -g theme_display_git yes
 set -g theme_display_git_default_branch yes
@@ -45,6 +45,10 @@ alias dp 'docker compose'
 
 alias psh 'poetry shell'
 alias prt 'poetry run tmux'
+
+if type acpi >/dev/null 2>&1
+    alias bi 'acpi -bi'
+end
 
 if type xsel >/dev/null 2>&1
     alias copy 'xsel --input --clipboard'
