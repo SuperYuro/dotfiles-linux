@@ -11,7 +11,7 @@
 
 set $mod Mod4
 
-set $font CaskaydiaCove Nerd Font Mono
+set $font JetBrainsMono Nerd Font
 set $fontsize 8
 
 set $left  h
@@ -230,36 +230,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Color settings
-set_from_resource $color0      i3wm.color0      #2e3440
-set_from_resource $color1      i3wm.color1      #3b4252
-set_from_resource $color2      i3wm.color2      #434c5e
-set_from_resource $color3      i3wm.color3      #4c566a
-set_from_resource $color4      i3wm.color4      #d8dee9
-set_from_resource $color5      i3wm.color5      #e5e9f0
-set_from_resource $color6      i3wm.color6      #eceff4
-set_from_resource $color7      i3wm.color7      #8fbcbb
-set_from_resource $color8      i3wm.color8      #88c0d0
-set_from_resource $color9      i3wm.color9      #81a1c1
-set_from_resource $color10     i3wm.color10     #5e81ac
-set_from_resource $color11     i3wm.color11     #bf616a
-set_from_resource $color12     i3wm.color12     #d08770
-set_from_resource $color13     i3wm.color13     #ebcb8b
-set_from_resource $color14     i3wm.color14     #a3be8c
-set_from_resource $color15     i3wm.color15     #b48ead
-set_from_resource $foreground  i3wm.foreground  $color4
-set_from_resource $background  i3wm.background  $color0
-set_from_resource $cursorColor i3wm.cursorColor $color4
 
 # class, border, bg, text, indicator, child border
-client.focused           $color6 $color6 $color0 $color6 $color6
-client.focused_inactive  $color8 $color8 $color0 $color8 $color8
-client.unfocused         $color8 $color0 $color8 $color8 $color8
-client.focused_tab_title $color6 $color0 $color6
-client.urgent            $color3 $color0 $color3 $color8 $color8
-client.placeholder       $color6 $color0 $color6 $color6 $color8
-
-client.background $color6
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -272,21 +244,31 @@ bar {
     status_command i3status
 
      colors {
-        background         $background
-        statusline         $color8
-        separator          $color8
-        focused_workspace  $color6  $color6  $color0
-        active_workspace   $color15 $color15 $color0
-        inactive_workspace $color0  $color0  $color15
-        urgent_workspace   $color3  $color3  $color0
-        binding_mode       $color6  $color6  $color0
+				background #282A36
+				statusline #F8F8F2
+				separator  #44475A
+
+				focused_workspace  #44475A #44475A #F8F8F2
+				active_workspace   #282A36 #44475A #F8F8F2
+				inactive_workspace #282A36 #282A36 #BFBFBF
+				urgent_workspace   #FF5555 #FF5555 #F8F8F2
+				binding_mode       #FF5555 #FF5555 #F8F8F2
     }
 }
 
+# # class                 border  bground text    indicator child_border
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+
+client.background       #F8F8F2
 
 # new_window none
 # new_float none
 # for_window [class="^.*"] border pixel 1
 
 exec --no-startup-id "ibus-daemon -drx"
-exec --no-startup-id "feh --bg-scale /usr/share/backgrounds/archlinux/small.png"
+exec --no-startup-id "setxkbmap -option ctrl:swapcaps"
+exec --no-startup-id "feh --bg-scale /usr/share/backgrounds/archlinux/wave.png"
