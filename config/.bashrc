@@ -1,6 +1,6 @@
 [[ $- != *i* ]] && return
 
-if ! [[ $TMUX || $VIRTUAL_ENV ]]; then
+if ! [[ $TMUX || $VIRTUAL_ENV || $VSCODE_IPC_HOOK_CLI ]]; then
 	cd
 fi
 
