@@ -4,17 +4,16 @@ general {
 
         colors = false
 
-        color_good = "#D8DEE9"
-        color_degraded = "#EBCB8B"
-        color_bad = "#BF616A"
+        color_good = "#50FA7B"
+        color_degraded = "#F1FA8C"
+        color_bad = "#FF5555"
 }
 
 order += "cpu_usage"
 order += "memory"
 order += "ethernet _first_"
 order += "wireless _first_"
-order += "battery 0"
-order += "battery 1"
+order += "battery all"
 order += "volume master"
 order += "time"
 
@@ -36,7 +35,7 @@ wireless _first_ {
         format_down = ""
 }
 
-battery 0 {
+battery all {
         status_chr = "C"
         status_bat = "D"
         status_unk = "?"
@@ -44,19 +43,7 @@ battery 0 {
 
         low_threshold = 20
 
-        format = "0: %status %percentage"
-        format_down = ""
-}
-
-battery 1 {
-        status_chr = "C"
-        status_bat = "D"
-        status_unk = "?"
-        status_full = "F"
-
-        low_threshold = 20
-
-        format = "1: %status %percentage"
+        format = "%status %percentage"
         format_down = ""
 }
 
