@@ -115,7 +115,8 @@ if type ghq >/dev/null 2>&1
 else
     alias ghl 'cd ~/Development/(ls ~/Development | peco)'
 end
+
 alias cv 'cd ~/Development'
 alias lg lazygit
 
-pyenv init - | source
+# pyenv init - | source
