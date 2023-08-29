@@ -110,7 +110,11 @@ end
 
 alias rl 'exec fish'
 
-alias ghl 'cd ~/Development/(ls ~/Development | peco)'
+if type ghq >/dev/null 2>&1
+    alias ghl 'cd (ghq root)/(ghq list | peco)'
+else
+    alias ghl 'cd ~/Development/(ls ~/Development | peco)'
+end
 alias cv 'cd ~/Development'
 alias lg lazygit
 
