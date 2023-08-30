@@ -12,26 +12,28 @@ UXTerm*ttymodes: erase ^?
 
 UXTerm*borderWidth: 0
 
-UXTerm*faceName: CaskaydiaCove Nerd Font Mono:style=Regular:antialias=true
+UXTerm*faceName: JetBrainsMono Nerd Font:style=Regular:antialias=true
 UXTerm*faceNameDoublesize: Noto Sans CJK JP
 UXTerm*faceSize: 10
 
-UXTerm*background: #2e3440
-UXTerm*foreground: #d8dee9
-
-UXTerm*color0:  #3b4252
-UXTerm*color1:  #bf616a
-UXTerm*color2:  #a3be8c
-UXTerm*color3:  #ebcb8b
-UXTerm*color4:  #81a1c1
-UXTerm*color5:  #b48ead
-UXTerm*color6:  #88c0d0
-UXTerm*color7:  #e5e9f0
-UXTerm*color8:  #4c566a
-UXTerm*color9:  #bf616a
-UXTerm*color10: #a3be8c
-UXTerm*color11: #ebcb8b
-UXTerm*color12: #81a1c1
-UXTerm*color13: #b48ead
-UXTerm*color14: #8fbcbb
-UXTerm*color15: #eceff4
+! Nightfox colors for Xresources
+! Style: nordfox
+! Upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/nordfox/nightfox_xresources.Xresources
+*background: #2e3440
+*foreground: #cdcecf
+*color0:  #3b4252
+*color1:  #bf616a
+*color2:  #a3be8c
+*color3:  #ebcb8b
+*color4:  #81a1c1
+*color5:  #b48ead
+*color6:  #88c0d0
+*color7:  #e5e9f0
+*color8:  #465780
+*color9:  #d06f79
+*color10: #b1d196
+*color11: #f0d399
+*color12: #8cafd2
+*color13: #c895bf
+*color14: #93ccdc
+*color15: #e7ecf4
