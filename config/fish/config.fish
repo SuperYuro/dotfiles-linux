@@ -3,33 +3,33 @@ if status is-interactive
 end
 
 # bobthefish prompt settings
-# set -g theme_color_scheme nord
-#
-# set -g theme_display_git yes
-# set -g theme_display_git_default_branch yes
-#
-# set -g theme_display_virtualenv yes
-# set -g theme_display_ruby no
-# set -g theme_display_nord yes
-#
-# set -g theme_display_user ssh
-# set -g theme_display_hostname ssh
-#
-# set -g theme_show_exit_status yes
+set -g theme_color_scheme nord
+
+set -g theme_display_git yes
+set -g theme_display_git_default_branch yes
+
+set -g theme_display_virtualenv yes
+set -g theme_display_ruby no
+set -g theme_display_nord yes
+
+set -g theme_display_user ssh
+set -g theme_display_hostname ssh
+
+set -g theme_show_exit_status yes
 
 # Nightfox Color Palette
-# Style: duskfox
-# Upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/duskfox/nightfox_fish.fish
-set -l foreground e0def4
-set -l selection 433c59
-set -l comment 817c9c
-set -l red eb6f92
-set -l orange ea9a97
-set -l yellow f6c177
+# Style: nordfox
+# Upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/nordfox/nightfox_fish.fish
+set -l foreground cdcecf
+set -l selection 3e4a5b
+set -l comment 60728a
+set -l red bf616a
+set -l orange c9826b
+set -l yellow ebcb8b
 set -l green a3be8c
-set -l purple c4a7e7
-set -l cyan 9ccfd8
-set -l pink eb98c3
+set -l purple b48ead
+set -l cyan 88c0d0
+set -l pink bf88bc
 
 # Syntax Highlighting Colors
 set -g fish_color_normal $foreground
