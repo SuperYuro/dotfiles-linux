@@ -110,4 +110,19 @@ end
 alias cv 'cd ~/Development'
 alias lg lazygit
 
-# pyenv init - | source
+function goto_venv
+    set -l venv_dirs ".venv" "venv"
+
+    for dir in $venv_dirs
+        if test -e "$dir/bin/activate.fish"
+            source "$dir/bin/activate.fish"
+            return 0
+        end
+    end
+    echo "No venv script files are found."
+    return 1
+end
+
+alias pyvenv goto_venv
+
+pyenv init - | source
