@@ -2,3 +2,6 @@
 !/config/fish/config.fish
 
 /config/tmux/plugins
+
+/config/emacs/*
+!/config/emacs/init.el
