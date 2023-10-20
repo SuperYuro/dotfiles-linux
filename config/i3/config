@@ -11,7 +11,7 @@
 
 set $mod Mod4
 
-set $font JetBrainsMono Nerd Font
+set $font Hack Nerd Font
 set $fontsize 8
 
 set $left  h
@@ -70,7 +70,7 @@ bindsym $mod+Shift+s exec --no-startup-id scrot -F $ss_path -s -f
 floating_modifier $mod
 
 # start a terminal
-set $term alacritty
+set $term kitty
 bindsym $mod+Return exec $term
 # bindsym $mod+Return exec alacritty
 
@@ -244,31 +244,30 @@ bar {
     status_command i3status
 
      colors {
-				background #282A36
-				statusline #F8F8F2
-				separator  #44475A
+				background #2e3440
+				statusline #cdcecf
+				separator  #3b4252
 
-				focused_workspace  #44475A #44475A #F8F8F2
-				active_workspace   #282A36 #44475A #F8F8F2
-				inactive_workspace #282A36 #282A36 #BFBFBF
-				urgent_workspace   #FF5555 #FF5555 #F8F8F2
-				binding_mode       #FF5555 #FF5555 #F8F8F2
+				focused_workspace  #3b4252 #3b4252 #cdcecf
+				active_workspace   #2e3440 #3b4252 #cdcecf
+				inactive_workspace #2e3440 #2e3440 #cdcecf
+				urgent_workspace   #c9826b #c9826b #cdcecf
+				binding_mode       #c9826b #c9826b #cdcecf
     }
 }
 
 # # class                 border  bground text    indicator child_border
-client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
-client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
-client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
-client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
-client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+client.focused          #81a1c1 #81a1c1 #cdcecf #81a1c1   #81a1c1
+client.focused_inactive #3b4252 #3b4252 #cdcecf #3b4252   #3b4252
+client.unfocused        #2e3440 #2e3440 #cdcecf #2e3440   #2e3440
+client.urgent           #3b4252 #c9826b #cdcecf #c9826b   #c9826b
+client.placeholder      #2e3440 #2e3440 #cdcecf #2e3440   #2e3440
 
-client.background       #F8F8F2
+client.background       #cdcecf
 
 # new_window none
 # new_float none
 # for_window [class="^.*"] border pixel 1
 
 exec --no-startup-id "ibus-daemon -drx"
-exec --no-startup-id "setxkbmap -option ctrl:swapcaps"
-exec --no-startup-id "feh --bg-scale /usr/share/backgrounds/archlinux/wave.png"
+exec --no-startup-id "feh --bg-scale /usr/share/backgrounds/archlinux/small.png"
