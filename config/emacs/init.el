@@ -71,12 +71,7 @@
   :custom (mozc-candidate-style . 'echo-area)
   :config
   (set-input-method 'japanese-mozc)
-  (set-fontset-font t 'japanese-jisx0208 "Noto Serif CJK JP-10"))
-
-(leaf linum
-  :doc "display line numbers in the left margin"
-  :tag "builtin"
-  :global-minor-mode global-linum-mode)
+  (set-fontset-font t 'japanese-jisx0208 "Noto Sans CJK JP-10"))
 
 (leaf cus-edit
   :doc "tools for customizing Emacs and Lisp packages"
@@ -241,15 +236,8 @@
   :ensure t
   :after counsel)
 
-(leaf docker-tramp
-  :doc "TRAMP integration for docker containers"
-  :req "emacs-24" "cl-lib-0.5"
-  :tag "convenience" "docker" "emacs>=24"
-  :url "https://github.com/emacs-pe/docker-tramp.el"
-  :added "2022-11-04"
-  :emacs>= 24
-  :ensure t
-  :custom (docker-tramp-use-names . t))
+(leaf tramp-container
+  :ensure t)
 
 (leaf migemo
   :doc "Japanese incremental search through dynamic pattern expansion"
