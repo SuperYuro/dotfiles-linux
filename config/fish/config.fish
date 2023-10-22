@@ -68,8 +68,8 @@ else if type batcat >/dev/null 2>&1
 end
 
 alias l 'ls -1a'
-alias ll 'ls -lhg'
-alias la 'ls -lhga'
+alias ll 'ls -lh'
+alias la 'ls -lha'
 
 alias c cd
 alias th touch
