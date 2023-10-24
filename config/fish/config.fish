@@ -110,16 +110,13 @@ end
 
 alias rl 'exec fish'
 
-# if type ghq >/dev/null 2>&1
-#     alias ghl 'cd (ghq root)/(ghq list | peco)'
-#     alias cv 'cd (ghq root)'
-# else
-#     alias ghl 'cd ~/Development/(ls ~/Development | peco)'
-#     alias cv 'cd ~/Development'
-# end
-
-alias ghl 'cd ~/Development/(ls ~/Development | peco)'
-alias cv 'cd ~/Development'
+if type ghq >/dev/null 2>&1
+    alias ghl 'cd (ghq root)/(ghq list | peco)'
+    alias cv 'cd (ghq root)'
+else
+    alias ghl 'cd ~/Development/(ls ~/Development | peco)'
+    alias cv 'cd ~/Development'
+end
 
 alias lg lazygit
 
