@@ -257,7 +257,7 @@ bar {
 }
 
 # # class                 border  bground text    indicator child_border
-client.focused          #81a1c1 #81a1c1 #cdcecf #81a1c1   #81a1c1
+client.focused          #81a1c1 #81a1c1 #2e3440 #81a1c1   #81a1c1
 client.focused_inactive #3b4252 #3b4252 #cdcecf #3b4252   #3b4252
 client.unfocused        #2e3440 #2e3440 #cdcecf #2e3440   #2e3440
 client.urgent           #3b4252 #c9826b #cdcecf #c9826b   #c9826b
