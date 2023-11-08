@@ -110,18 +110,13 @@ end
 
 alias rl 'exec fish'
 
-if type ghq >/dev/null 2>&1
-    alias ghl 'cd (ghq root)/(ghq list | peco)'
-    alias cv 'cd (ghq root)'
-else
-    alias ghl 'cd ~/Development/(ls ~/Development | peco)'
-    alias cv 'cd ~/Development'
-end
+alias cv "cd ~/Development"
+alias dl "cd ~/Development/(ls ~/Development | peco)"
 
 alias lg lazygit
 
 function goto_venv
-    set -l venv_dirs ".venv" "venv"
+    set -l venv_dirs ".venv" venv
 
     for dir in $venv_dirs
         if test -e "$dir/bin/activate.fish"
