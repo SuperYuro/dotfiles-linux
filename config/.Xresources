@@ -12,28 +12,28 @@ UXTerm*ttymodes: erase ^?
 
 UXTerm*borderWidth: 0
 
-UXTerm*faceName: JetBrainsMono Nerd Font:style=Regular:antialias=true
+UXTerm*faceName: Hack Nerd Font:style=Regular:antialias=true
 UXTerm*faceNameDoublesize: Noto Sans CJK JP
 UXTerm*faceSize: 10
 
 ! Nightfox colors for Xresources
 ! Style: nordfox
 ! Upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/nordfox/nightfox_xresources.Xresources
-*background: #2e3440
-*foreground: #cdcecf
-*color0:  #3b4252
-*color1:  #bf616a
-*color2:  #a3be8c
-*color3:  #ebcb8b
-*color4:  #81a1c1
-*color5:  #b48ead
-*color6:  #88c0d0
-*color7:  #e5e9f0
-*color8:  #465780
-*color9:  #d06f79
-*color10: #b1d196
-*color11: #f0d399
-*color12: #8cafd2
-*color13: #c895bf
-*color14: #93ccdc
-*color15: #e7ecf4
+UXTerm*background: #2e3440
+UXTerm*foreground: #cdcecf
+UXTerm*color0:  #3b4252
+UXTerm*color1:  #bf616a
+UXTerm*color2:  #a3be8c
+UXTerm*color3:  #ebcb8b
+UXTerm*color4:  #81a1c1
+UXTerm*color5:  #b48ead
+UXTerm*color6:  #88c0d0
+UXTerm*color7:  #e5e9f0
+UXTerm*color8:  #465780
+UXTerm*color9:  #d06f79
+UXTerm*color10: #b1d196
+UXTerm*color11: #f0d399
+UXTerm*color12: #8cafd2
+UXTerm*color13: #c895bf
+UXTerm*color14: #93ccdc
+UXTerm*color15: #e7ecf4
