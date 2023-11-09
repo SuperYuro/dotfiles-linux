@@ -1,11 +1,10 @@
 # dotfiles-linux
 
-Config files for Linux
+My config files for Linux
 
 ## Compatibilities
 
-- ArchLinux
-- ArchWSL
+- All Debian-based distributions (WSL2 is included)
 
 ## Requirements
 
@@ -17,8 +16,4 @@ Config files for Linux
 ```Bash
 $ git clone https://github.com/SuperYuro/dotfiles-linux ~/dotfiles-linux
 $ cd dotfiles-linux/
-$ make archwsl # For ArchWSL
-$ make laptop  # For laptop
-$ make desktop # For desktop
-$ make cliconfig # Config file only
 ```
