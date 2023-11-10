@@ -18,18 +18,18 @@ set -g theme_display_hostname ssh
 set -g theme_show_exit_status yes
 
 # Nightfox Color Palette
-# Style: carbonfox
-# Upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/carbonfox/nightfox_fish.fish
-set -l foreground f2f4f8
-set -l selection 2a2a2a
-set -l comment 6e6f70
-set -l red ee5396
-set -l orange 3ddbd9
-set -l yellow 08bdba
-set -l green 25be6a
-set -l purple be95ff
-set -l cyan 33b1ff
-set -l pink ff7eb6
+# Style: nordfox
+# Upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/nordfox/nightfox_fish.fish
+set -l foreground cdcecf
+set -l selection 3e4a5b
+set -l comment 60728a
+set -l red bf616a
+set -l orange c9826b
+set -l yellow ebcb8b
+set -l green a3be8c
+set -l purple b48ead
+set -l cyan 88c0d0
+set -l pink bf88bc
 
 # Syntax Highlighting Colors
 set -g fish_color_normal $foreground
