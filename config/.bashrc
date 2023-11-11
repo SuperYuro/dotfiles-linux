@@ -7,6 +7,6 @@ fi
 if [[ $VSCODE_IPC_HOOK_CLI ]]; then
 	return
 fi
-if type fish > /dev/null 2>&1; then
-  exec fish
+if type /home/linuxbrew/.linuxbrew/bin/fish > /dev/null 2>&1; then
+  exec /home/linuxbrew/.linuxbrew/bin/fish
 fi
