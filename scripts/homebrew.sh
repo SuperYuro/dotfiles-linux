@@ -20,7 +20,7 @@ brew install tmux lsd bat dust peco ripgrep
 
 # Python
 brew install openssl readline sqlite3 xz zlib tcl-tk
-brew install pyenv rye
+brew install pyenv poetry rye
 
 # Git
 brew install ghq lazygit gh
@@ -32,4 +32,4 @@ brew install node yarn
 brew install deno
 
 # Editor
-brew install neovim
+brew install neovim --HEAD
