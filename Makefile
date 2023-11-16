@@ -4,8 +4,8 @@ all:
 	@echo "Config files for linux"
 
 wsl2:
-	@${DOTSCRIPTDIR}/base.sh
-	@${DOTSCRIPTDIR}/homebrew.sh
+	@${DOTSCRIPTDIR}/config.sh
+	@${DOTSCRIPTDIR}/wsl2.sh
 
 desktop:
 	@${DOTSCRIPTDIR}/base.sh
