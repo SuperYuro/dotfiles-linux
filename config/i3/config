@@ -11,7 +11,7 @@
 
 set $mod Mod4
 
-set $font Hack Nerd Font
+set $font UDEV Gothic 35NFLG
 set $fontsize 8
 
 set $left  h
@@ -244,19 +244,19 @@ bar {
     status_command i3status
 
      colors {
-				background #2e3440
-				statusline #cdcecf
-				separator  #3b4252
+        background #2e3440
+        statusline #cdcecf
+        separator  #3b4252
 
-				focused_workspace  #3b4252 #3b4252 #cdcecf
-				active_workspace   #2e3440 #3b4252 #cdcecf
-				inactive_workspace #2e3440 #2e3440 #cdcecf
-				urgent_workspace   #c9826b #c9826b #cdcecf
-				binding_mode       #c9826b #c9826b #cdcecf
+        focused_workspace  #3b4252 #3b4252 #cdcecf
+        active_workspace   #2e3440 #3b4252 #cdcecf
+        inactive_workspace #2e3440 #2e3440 #cdcecf
+        urgent_workspace   #c9826b #c9826b #cdcecf
+        binding_mode       #c9826b #c9826b #cdcecf
     }
 }
 
-# # class                 border  bground text    indicator child_border
+# class                 border  bground text    indicator child_border
 client.focused          #81a1c1 #81a1c1 #2e3440 #81a1c1   #81a1c1
 client.focused_inactive #3b4252 #3b4252 #cdcecf #3b4252   #3b4252
 client.unfocused        #2e3440 #2e3440 #cdcecf #2e3440   #2e3440
