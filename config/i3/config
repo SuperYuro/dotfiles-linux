@@ -271,4 +271,3 @@ client.background       #cdcecf
 
 exec --no-startup-id "ibus-daemon -drx"
 exec --no-startup-id "feh --bg-scale /usr/share/backgrounds/archlinux/small.png"
-exec --no-startup-id xcompmgr
