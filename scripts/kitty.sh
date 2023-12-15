@@ -1,6 +1,9 @@
 #!/bin/bash
 
-ln -s $HOME/dotfiles-linux/config/kitty $HOME/.config/kitty
+mkdir -p ~/.local/bin
+mkdir -p ~/.local/share/applications
+
+# ln -s $HOME/dotfiles-linux/config/kitty $HOME/.config/kitty
 
 # Download kitty binary
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
