@@ -32,4 +32,4 @@ brew install node yarn
 brew install deno
 
 # Editor
-brew install neovim --HEAD
+brew install neovim
