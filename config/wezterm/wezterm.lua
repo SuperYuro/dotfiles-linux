@@ -17,7 +17,8 @@ config.font_size = 12.0
 config.enable_scroll_bar = false
 
 -- Colorscheme
-config.color_scheme = "Solarized Dark - Patched"
+config.color_scheme_dir = { "~/.config/wezterm/colorscheme" }
+config.color_scheme = "nordfox"
 
 config.window_background_opacity = 0.7
 
