@@ -96,15 +96,9 @@ if type nvim >/dev/null 2>&1
     set -Ux EDITOR nvim
 end
 
-if [ -f "/mnt/c/Users/SuperYuro/Appdata/Local/Programs/Microsoft VS Code/bin/code" ]
+if [ -d /mnt/c ]
     alias code "/mnt/c/Users/SuperYuro/Appdata/Local/Programs/Microsoft\ VS\ Code/bin/code"
-end
-
-if [ -f "/mnt/c/Windows/explorer.exe" ]
     alias explorer "/mnt/c/Windows/explorer.exe"
-end
-
-if [ -f "/mnt/c/Windows/system32/clip.exe" ]
     alias clip "/mnt/c/Windows/system32/clip.exe"
 end
 
