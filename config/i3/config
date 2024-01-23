@@ -243,7 +243,7 @@ bar {
     position bottom
     status_command i3status
 
-     colors {
+    colors {
         background #2e3440
         statusline #cdcecf
         separator  #3b4252
@@ -271,3 +271,4 @@ client.background       #cdcecf
 
 exec --no-startup-id "ibus-daemon -drx"
 exec --no-startup-id "feh --bg-scale /usr/share/backgrounds/archlinux/simple.png"
+exec --no-startup-id "setxkbmap -option altwin:swap_alt_win,ctrl:swapcaps"
