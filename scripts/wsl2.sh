@@ -9,10 +9,10 @@ sudo apt update
 sudo apt upgrade -y
 
 # Base Development
-sudo apt install -y build-essential git vi vim
+sudo apt install -y build-essential git vim
 
 # System utilities
-sudo apt install -y exa bat tree curl
+sudo apt install -y tree curl
 
 # Python
 ## System Python
@@ -55,3 +55,6 @@ npm i -g yarn
 
 # Deno
 curl -fsSL https://deno.land/x/install/install.sh | sh
+
+# WSL Utility
+sudo apt install -y gh wslu
