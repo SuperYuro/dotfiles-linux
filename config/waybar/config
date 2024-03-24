@@ -49,11 +49,11 @@
     },
     "battery#bat0": {
         "bat": "BAT0",
-        "format": "󰁹0: {capacity}%"
+        "format": "󰁹0 {capacity}%"
     },
     "battery#bat1": {
         "bat": "BAT1",
-        "format": "󰁹1: {capacity}%"
+        "format": "󰁹1 {capacity}%"
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface

@@ -16,8 +16,3 @@ fi
 
 ln -s $HOME/dotfiles-linux/config/.gitconfig $HOME/.gitconfig
 ln -s $HOME/dotfiles-linux/config/.clang-format $HOME/.clang-format
-
-ln -s $HOME/dotfiles-linux/config/tmux $HOME/.config/tmux
-ln -s $HOME/dotfiles-linux/config/fish $HOME/.config/fish
-
-git clone https://github.com/SuperYuro/nvim $HOME/.config/nvim
