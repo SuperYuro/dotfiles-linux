@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "UDEV Gothic 35NFLG", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "UDEV Gothic 35NFLG", "PlemolJP35 Console NF", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 15px;
 }
 
