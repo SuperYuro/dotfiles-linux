@@ -54,7 +54,10 @@ set -g fish_pager_color_completion $foreground
 set -g fish_pager_color_description $comment
 
 # Alias settings
-if type lsd >/dev/null 2>&1
+if type eza >/dev/null 2>&1
+    alias ls 'eza --icons'
+    alias lt 'eza --icons --tree'
+else if type lsd >/dev/null 2>&1
     alias ls lsd
     alias lt 'lsd --tree'
 else if type exa >/dev/null 2>&1
