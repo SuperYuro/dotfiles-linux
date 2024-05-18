@@ -107,10 +107,10 @@ end
 
 alias rl 'exec fish'
 
-# alias cv "cd (ghq root)"
-# alias ghl "cd (ghq root)/(ghq list | peco)"
-alias cv "cd ~/Development"
-alias ghl "cd ~/Development/(ls ~/Development | peco)"
+alias cv "cd (ghq root)"
+alias ghl "cd (ghq root)/(ghq list | peco)"
+# alias cv "cd ~/Development"
+# alias ghl "cd ~/Development/(ls ~/Development | peco)"
 
 alias lg lazygit
 
